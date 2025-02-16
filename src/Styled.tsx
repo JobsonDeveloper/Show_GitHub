@@ -1,37 +1,36 @@
-import React from 'react'
-import styled from 'styled-components'
+import styled, { createGlobalStyle } from 'styled-components'
 
-type BotaoProps = {
-  one: boolean
-}
+const ResetGlobal = createGlobalStyle`
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+  }
 
-type Pprops = {
-  fontSize: string
-}
+  body {
+    padding-top: 80px;
 
-const Botao = styled.button<BotaoProps>`
-  background-color: ${(props) => (props.one ? 'green' : 'red')};
+    @media (max-width: 768px) {
+      padding-top: 16px;
+    }
+  }
 `
+export default ResetGlobal
 
-const Paragrafo = styled.p<Pprops>`
-  font-size: ${(props) => props.fontSize || '1rem'};
+export const Container = styled.div`
+  display: grid;
+  grid-template-columns: 128px auto;
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+  column-gap: 56px;
+
+  img {
+    max-width: 100%;
+  }
+
+  @media (max-width: 768px) {
+    max-width: 80%;
+    display: block;
+  }
 `
-
-const ParagrafoDois = styled(Paragrafo)`
-  color: green;
-`
-
-function Styled() {
-  return (
-    <div>
-      <Botao one>Envar</Botao>
-      <Botao one={false}>Cancelar</Botao>
-
-      <Paragrafo fontSize="2rem">Texto aqui...</Paragrafo>
-
-      <ParagrafoDois fontSize="2rem">Texto aqui...</ParagrafoDois>
-    </div>
-  )
-}
-
-export default Styled

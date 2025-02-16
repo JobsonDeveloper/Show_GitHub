@@ -1,12 +1,22 @@
 import React from 'react'
-import Styled from './Styled'
-import ResetGlobal from './Reset'
+import ResetGlobal, { Container } from './Styled'
+import Sidebar from './containers/Sidebar/Sidebar'
+import Sobre from './containers/Sobre/Sobre'
+import Projetos from './containers/Projetos/Projetos'
 
 function App() {
   return (
     <>
       <ResetGlobal />
-      <Styled />
+
+      <Container>
+        <Sidebar />
+
+        <main>
+          <Sobre />
+          <Projetos />
+        </main>
+      </Container>
     </>
   )
 }
