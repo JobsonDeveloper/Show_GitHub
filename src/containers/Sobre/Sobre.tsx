@@ -17,8 +17,8 @@ const Sobre = () => {
         totam fugit.
       </Paragrafo>
       <GitHubSecao>
-        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=JobsonDeveloper&custom_title=Linguagens%20mais%20utilizadas&title_color=00c150&text_color=1f1f1f&bg_color=ffffff00" />
-        <img src="https://github-readme-stats.vercel.app/api?username=JobsonDeveloper&custom_title=Detalhes&show_icons=true&theme=radical&title_color=00c150&text_color=1f1f1f&bg_color=ffffff00&icon_color=00c150" />
+        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=JobsonDeveloper&custom_title=Linguagens%20mais%20utilizadas&title_color=00ed63&text_color=fff&bg_color=282a35" />
+        <img src="https://github-readme-stats.vercel.app/api?username=JobsonDeveloper&custom_title=Detalhes&show_icons=true&theme=radical&title_color=00ed63&text_color=fff&bg_color=282a35&icon_color=00c150" />
       </GitHubSecao>
     </section>
   )

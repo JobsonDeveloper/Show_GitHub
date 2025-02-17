@@ -10,6 +10,7 @@ const ResetGlobal = createGlobalStyle`
 
   body {
     padding: 80px 0;
+    background-color: ${(props) => props.theme.corDeFundo};
 
     @media (max-width: 768px) {
       padding: 16px 0;
