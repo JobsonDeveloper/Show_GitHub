@@ -3,14 +3,27 @@ import { Titulo } from '../Titulo/Styles'
 import Paragrafo from '../Paragrafo/Paragrafo'
 import { Card, LinkBotao } from './Styles'
 
-const Projeto = () => {
+type Props = {
+  repositorio: {
+    name: string
+    description: string
+    html_url: string
+  }
+}
+
+const Projeto = (props: Props) => {
+  const { name, description, html_url } = props.repositorio
+
   return (
     <Card>
-      <Titulo>Projeto Lista de tarefas</Titulo>
-      <Paragrafo tipo="secundario">
-        Lista de tarefas Feritas com React
-      </Paragrafo>
-      <LinkBotao>Visualizar</LinkBotao>
+      <Titulo>{name}</Titulo>
+      {description == undefined && (
+        <Paragrafo tipo="secundario">Sem descrição</Paragrafo>
+      )}
+      {description != '' && (
+        <Paragrafo tipo="secundario">{description}</Paragrafo>
+      )}
+      <LinkBotao href={html_url}>Visualizar</LinkBotao>
     </Card>
   )
 }

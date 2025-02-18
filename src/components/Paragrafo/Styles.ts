@@ -8,4 +8,5 @@ export const P = styled.p<Props>`
       ? props.theme.corPrincipal
       : props.theme.corSecundatia};
   line-height: 22px;
+  overflow: hidden;
 `

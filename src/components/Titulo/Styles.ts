@@ -6,4 +6,5 @@ export const Titulo = styled.h3<Props>`
   font-size: ${(props) => (props.fontSize ? props.fontSize + 'px' : '16px')};
   font-weight: bold;
   margin-bottom: 16px;
+  text-align: ${(props) => (props.align === 'center' ? 'center' : 'left')};
 `

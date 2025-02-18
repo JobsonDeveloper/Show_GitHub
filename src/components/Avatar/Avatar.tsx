@@ -1,8 +1,12 @@
 import React from 'react'
 import { FotoPerfil } from './Styles'
 
-const Avatar = () => {
-  return <FotoPerfil src="https://github.com/JobsonDeveloper.png" />
+type Props = {
+  urlFoto: string
+}
+
+const Avatar = (props: Props) => {
+  return <FotoPerfil src={props.urlFoto} />
 }
 
 export default Avatar
