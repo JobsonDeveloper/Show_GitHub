@@ -13,6 +13,8 @@ Enquanto a aplicação aguarda a resposta para a promisse feita por meio do Fetc
 
 O site também conta com um recurso muito bem visto pelos usuários finais, que é a opção de mudança do tema do site, onde o usuário pode escolher um tema claro ou um tema escuro, melhorando assim a experiência do usuário com o sistema.
 
+A troca de tema do site é realizado através do ThemeProvider, um recurso fornecido pelo Styled-components, onde é fornecido um objeto contendo as cores para o site, então os componentes utilizam estas cores fornecidas. Para trocas as cores apenas fornecemos um objeto contendo cores direfentes.
+
 ![image](https://github.com/user-attachments/assets/132a8b2f-5215-4b2e-986d-7180bf02ccd4)
 <br/>
 <br/>
